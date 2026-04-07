@@ -1,0 +1,42 @@
+:root {
+  font-family: "Poppins", sans-serif;
+
+  color-scheme: light dark;
+  background: linear-gradient(to bottom, #000000 40%, #ce3d03);
+  color: rgba(204, 29, 29, 0.87);
+  background-color: #242424;
+}
+
+a {
+  font-weight: 500;
+  color: #16161a;
+  text-decoration: inherit;
+}
+p {
+  color: white;
+}
+a:hover {
+  color: black;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  background-color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
