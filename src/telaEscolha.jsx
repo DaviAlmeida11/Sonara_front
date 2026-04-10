@@ -22,7 +22,7 @@ export default function TelaEscolha() {
         </div>
 
         <div className="botao">
-          <button onClick={() => navigate("/Cadastro")}>Fazer Login</button>
+          <button onClick={() => navigate("/login")}>Fazer Login</button>
 
           <button onClick={() => navigate("/shows")}>
             Continuar sem Login
