@@ -1,21 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --cor-letra: #FF710C;
+  --cor-letra: #ff710c;
 }
 
-body {  
+body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
 }
-
-
 
 header {
   height: 180px;
@@ -35,25 +32,22 @@ img{
   position: absolute;
 }
 
-.mensagem{
+.mensagem {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 20px;
- color: var(--cor-letra);
+  color: var(--cor-letra);
 }
 
-
-main{
+main {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.botao{
+.botao {
   display: flex;
   align-items: center;
   flex-direction: column;
-   gap: 30px;
+  gap: 30px;
 }
-
-

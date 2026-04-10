@@ -1,7 +1,5 @@
 import{ BowserRoutes, Routes, Route } from "react-router-dom"
-import telaEscolha from "./telaEscolha.jsx"
 
-import telaCadastro from "outrTela"
 
 function rota() {
   return (
