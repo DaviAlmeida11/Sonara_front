@@ -1,31 +1,14 @@
-import logo from "./img/sonara-logo.svg";
-import "./App.css";
-import { useNavigate } from "react-router-dom";
+import logo from './img/sonara-logo.svg';
+import './telaEscolha.css';
+import { useNavigate } from 'react-router-dom';
 
-<<<<<<< HEAD:src/telaEscolha.jsx
-import { useState } from 'react'
-import logo from './img/SONARA LOGO.svg';
-import './telaEscolha.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <body>
-      
-    
-      <header>
-        <img src={logo} alt="logo" />
-        <p>SONARA</p>
-=======
-export default function App() {
+export default function TelaEscolha() {
   const navigate = useNavigate();
 
   return (
     <div className="app">
       <header className="header">
         <img src={logo} alt="Logo Sonara" />
->>>>>>> 4888736f3174038e92ef6b34a0cb83e0c25357a0:src/App.jsx
       </header>
 
       <main className="main">
@@ -40,9 +23,13 @@ export default function App() {
             Contratar Artista
           </button>
 
-          <button onClick={() => navigate("/shows")}>Fazer Shows</button>
+          <button onClick={() => navigate("/shows")}>
+            Fazer Shows
+          </button>
 
-          <button onClick={() => navigate("/eventos")}>Ver Eventos</button>
+          <button onClick={() => navigate("/eventos")}>
+            Ver Eventos
+          </button>
         </div>
       </main>
     </div>

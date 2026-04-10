@@ -9,6 +9,7 @@ function Cadastro() {
       </header>
       <main>
         <div className="preencher">
+          <div className="informacao">
         <span>Por favor digite o nome</span>
         <input type="text" placeholder= "  Digite aqui" />
 
@@ -23,8 +24,8 @@ function Cadastro() {
 
         <span>Digite sua senha novamente</span>
         <input type="password" placeholder="  Digite aqui" />
-
-          <button>Cadastre-se</button>
+</div>
+          <button>Cadastre - se</button>
 </div>
       
       </main>

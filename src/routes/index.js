@@ -1,15 +1,19 @@
-import{ BowserRoutes, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Login from "./login";
+import Home from "./home";
+import OutraPagina from "./OutraPagina";
 
-function rota() {
+function Rota() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/outra" element={<OutraPagina />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default rota;
+export default Rota;
