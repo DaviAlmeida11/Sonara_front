@@ -1,14 +1,17 @@
-import logo from './img/sonara-logo.svg';
-import './telaEscolha.css';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import logo from "./img/sonara-logo.svg";
+import "./telaEscolha.css";
 
 export default function TelaEscolha() {
   const navigate = useNavigate();
+  const [count, setCount] = useState(0);
 
   return (
     <div className="app">
       <header className="header">
         <img src={logo} alt="Logo Sonara" />
+        <p>SONARA</p>
       </header>
 
       <main className="main">
@@ -19,16 +22,10 @@ export default function TelaEscolha() {
         </div>
 
         <div className="botao">
-          <button onClick={() => navigate("/contratar")}>
-            Contratar Artista
-          </button>
+          <button onClick={() => navigate("/Cadastro")}>Fazer Login</button>
 
           <button onClick={() => navigate("/shows")}>
-            Fazer Shows
-          </button>
-
-          <button onClick={() => navigate("/eventos")}>
-            Ver Eventos
+            Continuar sem Login
           </button>
         </div>
       </main>
