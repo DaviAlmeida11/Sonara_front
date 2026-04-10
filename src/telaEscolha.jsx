@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import logo from './img/SONARA LOGO.svg';
-import './App.css'
+import './telaEscolha.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +12,7 @@ function App() {
     
       <header>
         <img src={logo} alt="logo" />
+        <p>SONARA</p>
       </header>
       <main>
         <div className="mensagem">

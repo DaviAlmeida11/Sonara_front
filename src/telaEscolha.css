@@ -22,6 +22,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+
+}
+header p {
+  font-size: 45px;
+  font-weight: bold;
+  
+}
+img{
+  height: 350px;
+  position: absolute;
 }
 
 .mensagem{
