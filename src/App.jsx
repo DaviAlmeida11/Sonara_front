@@ -1,38 +1,33 @@
+import logo from "./img/sonara-logo.svg";
+import "./App.css";
+import { useNavigate } from "react-router-dom";
 
-import { useState } from 'react'
-import logo from './img/SONARA LOGO.svg';
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const navigate = useNavigate();
 
   return (
-    <body>
-      
-    
-      <header>
-        <img src={logo} alt="logo" />
+    <div className="app">
+      <header className="header">
+        <img src={logo} alt="Logo Sonara" />
       </header>
-      <main>
-        <div className="mensagem">
-          <h1> BEM-VINDO A SONARA</h1>
-          <p>UNIFICANDO IDEIAS, REALIZANDO SONHOS</p>
-          <h2>OQUE VOCE BUSCA ?</h2>
-        </div>
-        <div className="botao">
-        <button>
-          <span>Contratar Artista</span>
-        </button>
-        <button>
-         <span>Fazer Shows </span> 
-        </button>
-        <button>
-         <span>Ver Eventos </span> 
-        </button>
-       </div>
-      </main>
-   </body>
-  )
-}
 
-export default App
+      <main className="main">
+        <div className="mensagem">
+          <h1>BEM-VINDO A SONARA</h1>
+          <p>UNIFICANDO IDEIAS, REALIZANDO SONHOS</p>
+          <h2>O QUE VOCÊ BUSCA?</h2>
+        </div>
+
+        <div className="botao">
+          <button onClick={() => navigate("/contratar")}>
+            Contratar Artista
+          </button>
+
+          <button onClick={() => navigate("/shows")}>Fazer Shows</button>
+
+          <button onClick={() => navigate("/eventos")}>Ver Eventos</button>
+        </div>
+      </main>
+    </div>
+  );
+}
